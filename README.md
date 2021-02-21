@@ -22,8 +22,8 @@ docker run -d \
   --tty \
   --privileged \
   --volume /sys/fs/cgroup:/sys/fs/cgroup:ro \
-  --name daosd-fedora-systemd \
-  daosdo/fedora-systemd:latest
+  --name daosd-fedora33-systemd \
+  daosdo/fedora-systemd:33
 ```
 
 Adding `--tty` allocates a pseudo-TTY and enables color in the logs when
@@ -32,11 +32,11 @@ running `docker logs`.
 ### Enter it
 
 ```
-docker exec -it daosd-fedora-systemd /bin/bash
+docker exec -it daosd-fedora33-systemd /bin/bash
 ```
 
 ### Remove it
 
 ```
-docker rm -f daosd-fedora-systemd
+docker rm -f daosd-fedora33-systemd
 ```
