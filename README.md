@@ -12,6 +12,7 @@ Each branch in the repository is used for building a specific version.
 | ------ | -------------- | --------------------- |
 | master | latest         | latest                |
 | 33     | 33             | 33                    |
+| 34     | 34             | 34                    |
 
 ## Usage
 
